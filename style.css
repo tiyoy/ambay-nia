@@ -1,0 +1,199 @@
+:root {
+  --mainFonts: Caveat;
+  --paragrafFonts: Readex Pro, sans-serif;
+  --darkRed: #222f31;
+  --lightRed: #a98560;
+  --acsentColor: #c99c59;
+  --white: #eddfdc;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+h1 {
+  font-family: var(--mainFonts);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 80px;
+}
+
+h2 {
+  font-family: var(--paragrafFonts);
+  color: var(--white);
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 35px;
+  color: var(--lightRed);
+  font-family: var(--mainFonts);
+  font-weight: bold;
+}
+
+hr {
+  color: var(--lightRed);
+  opacity: 1;
+  border: 2px solid var(--lightRed);
+  border-radius: 20px;
+  width: 5em;
+  margin: 1em auto;
+}
+
+p {
+  font-family: var(--paragrafFonts);
+  color: var(--white);
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+svg {
+  margin-top: -20px;
+}
+
+nav a {
+  margin: 0 0.5em;
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+nav a:hover {
+  color: var(--lightRed);
+  opacity: 1;
+}
+
+section {
+  padding: 100px 0.5em;
+}
+
+nav {
+  background-color: var(--darkRed);
+  padding-top: 0.5em;
+  box-shadow: 0 0 30px #1a2425;
+}
+
+.btn {
+  font-family: var(--paragrafFonts);
+}
+
+.btn-custom {
+  background-color: var(--acsentColor);
+  font-size: 16px;
+  color: var(--white);
+  padding: 0.5em 1em;
+}
+
+.btn-custom:hover {
+  background-color: #906d38;
+  color: var(--white);
+}
+
+#modal-awal {
+  position: absolute;
+  z-index: 2;
+  top: 20vh;
+}
+
+#bgBanner {
+  background-image: url(img/baner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner {
+  padding-top: 20vh;
+}
+
+#couple {
+  background-color: var(--darkRed);
+  background-image: url(img/pattern.png);
+  background-size: 400px;
+}
+
+.memplai img {
+  width: 80%;
+  border-radius: 100%;
+  border: 3px solid var(--lightRed);
+}
+
+#couple i {
+  font-size: 60px;
+  color: var(--lightRed);
+}
+
+#acara {
+  background-image: url(img/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -250px;
+}
+
+.box-acara {
+  background-color: #222f31da;
+  margin: 15px;
+  padding: 2em;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+#maps {
+  background-color: var(--darkRed);
+  background-image: url(img/pattern.png);
+  background-size: 400px;
+}
+
+#gallery img {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#popup {
+  background-image: url(img/baner.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  z-index: 3000;
+  padding-top: 40vh;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 13px;
+  }
+
+  .om img {
+    width: 150%;
+  }
+
+  #bgBanner,
+  #popup,
+  #acara {
+    background-position-x: 48%;
+  }
+
+  .banner {
+    padding-top: 10vh;
+  }
+}
